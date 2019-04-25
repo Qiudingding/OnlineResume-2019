@@ -22,15 +22,12 @@
 		specialTags[minIndex].classList.remove('offset')
 		let id = specialTags[minIndex].id
 		let a = document.querySelector('a[href="#'+ id + '"]')
-		if(!!a) {
 			let li = a.parentNode
 			let brothersAndMe = li.parentNode.children
 			for(let i=0; i<brothersAndMe.length; i++){
 				brothersAndMe[i].classList.remove('highLight')
 			}
 			li.classList.add('highLight')
-		}
-
 	}
 	let liTags = document.querySelectorAll('nav.menu > ul > li')
 	for(let i=0; i<liTags.length; i++){
